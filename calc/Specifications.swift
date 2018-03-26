@@ -10,12 +10,8 @@
 <<< Requirements >>>
  
  1. prepare a macOS command-line tool that will act as a simple calculator.
- 2. The calculator will be run from the command line (./calc args) and will only work with integer numbers and the following arithmetic operators: + - x / %. The % operator is the modulus operator, not percentage.
+ 2. The calculator will be run from the command line (./calc args) and will only work with integer numbers and the following arithmetic operators: + - x / %. The % operator is the modulus operator, not percentage. - Read to optional int's using ? after int then check if values are contained using "if" to compare the optional against nil (if optional(Int?) != nil) "if let" can be used for optional binding.
  
-For example, if the program is compiled to calc, the following demonstrates how it will work
- 
- ./calc 3 + 5 - 7
- 1
  3. In the command line, the arguments are a repeated sequence in the form (number, operator, number(end))
  4. Hitting the enter key will cause the program to evaluate the arguments and print the result. In this case 1.
  5. The x / and % operators must all be evaluated before the + and – operators.
@@ -23,8 +19,8 @@ For example, if the program is compiled to calc, the following demonstrates how 
  7. Also note that we can use the unary + and – operators. For example
  ./calc -5 / +2
  = -2
- 8. Your program must also check to make sure the command line arguments are valid.
- 9. If not your program must generate an appropriate error message and then terminate with nonzero exit status.
+ 8. Your program must also check to make sure the command line arguments are valid. (If else test returning string) (assertions and preconditions)
+ 9. If not your program must generate an appropriate error message and then terminate with nonzero exit status. (error handling on developer site) 
  10. You should also check for division by zero errors and numeric out-of-bounds errors.
  11. As part of your program design, it is expected you will create classes to model the problem domain.
  
